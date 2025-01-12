@@ -74,7 +74,7 @@ nav ul li a:hover {
 /* Carousel Styles */
 .carousel {
     position: relative;
-    max-width: 95%;
+    max-width: 75%;
     margin: auto;
     overflow: hidden;
   }
@@ -111,6 +111,25 @@ nav ul li a:hover {
     right: 10px;
   }
 
+  .carousel-control-prev2, .carousel-control-next2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #f0eeee;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .carousel-control-prev2 {
+    left: 10px;
+  }
+  
+  .carousel-control-next2 {
+    right: 10px;
+  }
+
+
   /* Footer Styles */
 footer {
     background-color: #bf4d19;
@@ -142,7 +161,7 @@ footer {
     align-items: center;
     margin: 5x 0;
     color: black;
-    height: 30px;
+    height: 10px;
 }
 
 .flex-item {
@@ -151,5 +170,5 @@ footer {
     margin: 10px;
     border-radius: 5px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    width: 100%;
+    /* width: %; */
 }
