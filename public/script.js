@@ -33,3 +33,30 @@ slides.forEach(slide => {
 document.addEventListener('DOMContentLoaded', () => {
   showSlide(currentSlide);
 });
+
+fetch('/principals-message.txt')
+.then(response => response.text())
+.then(data => {
+  document.getElementById('principals-message').textContent = data;
+})
+.catch(error => console.error('Error loading file:', error));
+
+function showDiv(divNumber) {
+  document.getElementById('div1').style.display = 'none';
+  document.getElementById('div2').style.display = 'none';
+  document.getElementById('div3').style.display = 'none';
+  document.getElementById('div' + divNumber).style.display = 'block';
+}
+
+// Show div1 by default
+document.addEventListener('DOMContentLoaded', function() {
+  showDiv(1);
+  document.querySelector('.styled-button:nth-child(1)').classList.add('selected');
+
+  document.querySelectorAll('.styled-button').forEach((button, index) => {
+      button.addEventListener('click', () => {
+          document.querySelectorAll('.styled-button').forEach(btn => btn.classList.remove('selected'));
+          button.classList.add('selected');
+      });
+  });               
+});

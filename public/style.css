@@ -1,16 +1,14 @@
-/* public/style.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     text-align: center;
-    /* padding: 20px; */
   }
 
 .hero {
     /* background-color: #333;
     color: #fff; */
     padding: 10px;
-    margin: 5%;
+    margin: 2.5%;
 }
   
 h1 {
@@ -27,10 +25,6 @@ nav {
   background-color: #2c3629;
   padding: 10px;
   border-radius: 5px; 
-  /* position: fixed;
-  top: 20;
-  width: 100%;
-  z-index: 1000; */
 }
 
 nav ul {
@@ -53,8 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  /* background-color: #555;  */
-  background-color: #bf4d19;
+  background-color: #d23f55;
   color: #fff;
 }
 
@@ -64,7 +57,7 @@ nav ul li a:hover {
     text-transform: uppercase;
     color: #fff; 
     /* background-color: #2c3629;  */
-    background-color: #bf4d19;
+    background-color: #d23f55;    
     padding: 10px; 
     border-radius: 5px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -74,7 +67,7 @@ nav ul li a:hover {
 /* Carousel Styles */
 .carousel {
     position: relative;
-    max-width: 75%;
+    max-width: 70%;
     margin: auto;
     overflow: hidden;
   }
@@ -132,7 +125,8 @@ nav ul li a:hover {
 
   /* Footer Styles */
 footer {
-    background-color: #bf4d19;
+    /* background-color: #bf4d19; */
+    background-color: #2c3629;
     color: #fff;
     padding: 10px 0;
     width: 100%;
@@ -151,7 +145,7 @@ footer {
 
   .social-media {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 10px;
   }
 
@@ -165,10 +159,261 @@ footer {
 }
 
 .flex-item {
-    background-color: #f1f1f1;
+    background-color: #f5f5f5;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    /* width: %; */
 }
+
+.flex-item-addtnl {
+  /* background-color: #f5f5f5; */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  /* text-align: center; */
+  width: 65%; 
+  height: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color:#e8c9c9
+}
+
+.parallax {
+  background-image: url('/sports.jpg'); 
+  height: 500px; 
+  background-attachment: fixed; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+
+}
+
+.parallax-2 {
+  background-color: #ffffff;
+  height: 400px; 
+  background-attachment: fixed; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.flex-container-2{
+  /* display: flex; */
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 5x 0; */
+  color: black;
+  /* height: 10px; */
+  height: 500px; 
+
+}
+
+.flex-item-2 {
+  padding: 10px;
+  margin: 5px;
+  width: 35%; 
+  /* height: 50%;  */
+  border-radius: 5px; 
+  background-color: #d0828e; 
+  border: 1px solid black;
+  text-align: left;
+  color: white
+  
+}
+
+.core-values {
+  background-color: #d23f55; 
+  width: 15%; 
+  margin: 0 auto; 
+  height: 50px; 
+  text-align: center; 
+  color: white; 
+  border-radius: 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.principals-img2 {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgb(210, 63, 85); 
+  text-align: center; 
+  color: white;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* object-fit: cover; 
+  transform: scale(1.2); */
+
+}
+
+.flex-container-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  width:80%; 
+  height: 500px; 
+  margin: 0 auto;
+}
+
+.principals-pen div {
+  background-color: rgb(210, 63, 85); 
+  width: 25%; 
+  margin: 0 auto; 
+  height: 50px; 
+  text-align: center; 
+  color: white; 
+  border-radius: 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.principals-img { 
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.principals-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .principals-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .principals-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.principals-message {
+  font-style: italic; 
+  border-left: 5px solid #e67c7c; 
+  padding-left: 10px; 
+  margin: 20px 0; 
+  text-align: justify; 
+  font-family: 'Georgia', serif; 
+  font-size: 1.1em;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .circle {
+    width: 200px; 
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.styled-button {
+            
+  background-color: #d23f55; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;            
+  }
+
+  .styled-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #d23f55;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .selected {
+      background-color: white;
+  color: black;
+  border: 2px solid #d23f55;
+  }
+
+  .content-panel {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;  
+}
+
+.content-div h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+.content-div p {
+    font-family: 'Georgia', serif;
+    color: #666;
+}
+
+.content-div:first-child {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  }
+  .content-div.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  }
