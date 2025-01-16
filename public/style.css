@@ -181,7 +181,7 @@ footer {
 
 .parallax {
   background-image: url('/sports.jpg'); 
-  height: 500px; 
+  height: 550px; 
   background-attachment: fixed; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -224,7 +224,7 @@ footer {
 
 .core-values {
   background-color: #d23f55; 
-  width: 15%; 
+  width: 17%; 
   margin: 0 auto; 
   height: 50px; 
   text-align: center; 
